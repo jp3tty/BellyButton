@@ -7,9 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+    .bg.-cover{
+      background-image: linear-gradient(to bottom, rgba(200, 136, 252, 0.295) 100%,rgba(241, 255, 88, 0.9) 0%), url('https://github.com/jp3tty/BellyButton/blob/main/images/nist-microbiome_resized.jpg?raw=true');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  </style>
+
 </head>
 
 <body>
+  <body style="background:linear-gradient(to bottom right, #10a2f7 0%, #fd9e10 104%)"></body>
 
   <div class="container">
     <div class="row">
@@ -22,6 +32,7 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
+          <p><small>Use the dropdown to update the chart contents.</small></p>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
@@ -34,14 +45,17 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <p><b><center>Top 10 bacteria cultures report in the individual sample.</center></b></p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p><b><center>Recorded frequency of sample area cleaning. Bacteria culture concentration tend to vary based on this metric.</center></b></p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p><b><center>Bubble plot representation of the cultures collected in the individual sample. Higher volumes are shown as larger bubbles.</center></b></p>
       </div>
     </div>
   </div>
